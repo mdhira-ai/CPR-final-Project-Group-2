@@ -27,8 +27,18 @@ void fundamentals()
     printf("*** End of Indexing Strings Demo***\n\n"); // display the end of the program
 
     /* Version 2 */
-    >> insert here
+    printf("*** Start of Measuring Strings Demo ***\n"); // show the start of the program
+    char buffer2[80];                                    // declare a string of characters with 80 elements
+    printf("Type a string (q - to quit):\n");            // prompt the user to type a string
+    gets(buffer2);                                       // get the input
+    while (strcmp(buffer2, "q") != 0)                    // if the user does not type 'q', do:
+    {
+        printf("The length is %lu\n", strlen(buffer2)); // show the length of the string
+        printf("Type a string (q - to quit):\n");
+        gets(buffer2);
+    }
+    printf("*** End of Measuring Strings Demo ***\n\n"); // show the end of the program
 
-        /* Version 3 */
-        >> insert here
+    /* Version 3 */
+    >> insert here
 }
